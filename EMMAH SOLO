@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>EMMAH SOLO 🎸 PROFESSOR - Guitar Lessons</title>
+<title>EMMAH SOLO 🎸 PROFESSOR | Guitar Lessons</title>
 
 <style>
 * {
@@ -13,177 +13,225 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Georgia, "Times New Roman", serif;
-    background: #111;
-    color: #eee;
-    padding-bottom: 75px;
+    background: #0b0b0b;
+    color: #ffffff;
+    padding-bottom: 80px;
 }
 
 /* HEADER */
 header {
     text-align: center;
-    padding: 35px 15px 30px;
-    background: linear-gradient(145deg, #111, #272018, #111);
-    border-bottom: 2px solid #c9a227;
+    padding: 42px 18px 35px;
+    background:
+        radial-gradient(circle at top, #3b301c, #15130f 45%, #080808 100%);
+    border-bottom: 2px solid #d4af37;
 }
 
 .logo {
-    font-size: 30px;
+    color: #d4af37;
+    font-size: 29px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #d8b34a;
 }
 
 .subtitle {
-    margin-top: 8px;
-    font-size: 18px;
-    letter-spacing: 3px;
-    color: white;
+    margin-top: 12px;
+    font-size: 19px;
+    letter-spacing: 4px;
 }
 
 .tagline {
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 13px;
     color: #cfcfcf;
     font-style: italic;
 }
 
-/* MAIN */
+/* CONTENT */
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
-.section-title {
-    text-align: center;
-    color: #d8b34a;
-    margin: 25px 0 18px;
-    font-size: 25px;
-}
-
-/* WELCOME */
 .welcome {
     text-align: center;
-    padding: 25px 15px;
+    padding: 30px 10px;
 }
 
 .welcome h2 {
-    color: #d8b34a;
-    margin-bottom: 12px;
+    color: #d4af37;
+    margin-bottom: 14px;
 }
 
 .welcome p {
-    line-height: 1.7;
-    color: #ddd;
+    color: #dddddd;
+    line-height: 1.8;
 }
 
-/* LESSON CARDS */
+/* SECTION TITLES */
+.section-title {
+    text-align: center;
+    color: #d4af37;
+    margin: 28px 0 20px;
+}
+
+/* GUITAR CARDS */
 .lessons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 18px;
+    gap: 20px;
 }
 
 .card {
-    background: linear-gradient(145deg, #201d19, #121212);
-    border: 1px solid #6e5720;
+    background: linear-gradient(145deg, #202020, #111111);
+    border: 1px solid #725d20;
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.55);
+    transition: transform 0.2s;
 }
 
-.card img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    display: block;
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.guitar-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle, #39301e, #151515 70%);
+    font-size: 100px;
 }
 
 .card-content {
-    padding: 18px;
+    padding: 20px;
 }
 
 .card h3 {
-    color: #d8b34a;
-    font-size: 22px;
+    color: #d4af37;
+    font-size: 23px;
     margin-bottom: 10px;
 }
 
 .card p {
-    line-height: 1.6;
-    color: #ddd;
+    color: #dddddd;
+    line-height: 1.65;
 }
 
 .price {
-    margin-top: 15px;
+    color: #d4af37;
     font-size: 20px;
     font-weight: bold;
-    color: #d8b34a;
+    margin-top: 15px;
 }
 
 .time {
-    margin-top: 5px;
+    color: #cccccc;
+    margin-top: 6px;
 }
 
-/* LEARN SECTION */
-.learn-box {
-    background: #1b1916;
-    border: 1px solid #5d4b20;
+/* LEARNING */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+}
+
+.skill {
+    background: #191919;
+    border-left: 3px solid #d4af37;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.skill h3 {
+    color: #d4af37;
+    margin-bottom: 8px;
+}
+
+.skill p {
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+/* PROFESSOR */
+.professor {
+    margin-top: 35px;
+    padding: 28px 20px;
+    text-align: center;
+    background: linear-gradient(145deg, #302718, #111111);
+    border: 1px solid #d4af37;
     border-radius: 18px;
-    padding: 20px;
 }
 
-.topic {
-    padding: 15px;
-    margin-bottom: 12px;
-    border-left: 3px solid #d8b34a;
-    background: #111;
-    border-radius: 8px;
+.professor-icon {
+    font-size: 65px;
+    margin-bottom: 10px;
 }
 
-.topic h3 {
-    color: #d8b34a;
-    margin-bottom: 5px;
+.professor h2 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.professor p {
+    color: #dddddd;
+    line-height: 1.7;
 }
 
 /* BOOKING */
 .booking {
-    text-align: center;
     margin-top: 30px;
-    padding: 25px;
-    background: linear-gradient(145deg, #272018, #111);
-    border: 1px solid #c9a227;
+    padding: 30px 20px;
+    text-align: center;
+    background: #171717;
+    border: 1px solid #725d20;
     border-radius: 18px;
 }
 
 .booking h2 {
-    color: #d8b34a;
+    color: #d4af37;
     margin-bottom: 12px;
 }
 
 .whatsapp {
     display: inline-block;
-    margin-top: 18px;
-    padding: 13px 25px;
-    border-radius: 30px;
+    margin-top: 20px;
+    padding: 14px 27px;
     background: #25D366;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+    border-radius: 30px;
     font-family: Arial, sans-serif;
     font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    color: #777777;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
 }
 
 /* BOTTOM NAVIGATION */
 .bottom-nav {
     position: fixed;
-    bottom: 0;
     left: 0;
     right: 0;
-    height: 68px;
-    background: #0c0c0c;
-    border-top: 1px solid #6e5720;
+    bottom: 0;
+    height: 70px;
+    background: #080808;
+    border-top: 1px solid #725d20;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -192,9 +240,10 @@ header {
 
 .nav-item {
     text-align: center;
-    color: #aaa;
+    color: #999999;
     font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
+    cursor: pointer;
 }
 
 .nav-item span {
@@ -204,16 +253,7 @@ header {
 }
 
 .nav-item.active {
-    color: #d8b34a;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 30px 15px;
-    color: #888;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+    color: #d4af37;
 }
 </style>
 </head>
@@ -221,172 +261,289 @@ footer {
 <body>
 
 <header>
-    <div class="logo">EMMAH SOLO 🎸 PROFESSOR</div>
-    <div class="subtitle">GUITAR LESSONS</div>
+
+    <div class="logo">
+        EMMAH SOLO 🎸 PROFESSOR
+    </div>
+
+    <div class="subtitle">
+        GUITAR LESSONS
+    </div>
+
     <div class="tagline">
         Learn • Practice • Master
     </div>
+
 </header>
 
-<div class="container">
+
+<main class="container">
+
+    <!-- WELCOME -->
 
     <section class="welcome">
+
         <h2>Welcome to EMMAH SOLO Guitar Lessons</h2>
+
         <p>
-            Develop your guitar skills through practical and structured
-            lessons in Bass, Lead and Rhythm Guitar.
+            Learn guitar step by step through practical lessons,
+            music theory, rhythm, chords, scales and different
+            musical styles.
         </p>
+
     </section>
 
-    <h2 class="section-title">🎸 Choose Your Guitar</h2>
+
+    <!-- GUITARS -->
+
+    <h2 class="section-title">
+        🎸 Choose Your Guitar
+    </h2>
 
     <section class="lessons">
 
+
         <!-- BASS -->
+
         <div class="card">
-            <img src="bass-guitar.jpg"
-                 alt="Person playing bass guitar">
+
+            <div class="guitar-image">
+                🎸
+            </div>
 
             <div class="card-content">
-                <h3>🎸 Bass Guitar</h3>
+
+                <h3>Bass Guitar</h3>
 
                 <p>
-                    Learn bass lines, grooves, timing, scales and
-                    practical bass techniques.
+                    Learn bass lines, grooves, timing, scales,
+                    bass movement and practical playing skills.
                 </p>
 
-                <div class="price">K60 per lesson</div>
-                <div class="time">⏱️ 1 hour</div>
+                <div class="price">
+                    K60 per lesson
+                </div>
+
+                <div class="time">
+                    ⏱️ 1 hour
+                </div>
+
             </div>
+
         </div>
+
 
         <!-- LEAD -->
+
         <div class="card">
-            <img src="lead-guitar.jpg"
-                 alt="Person playing lead guitar">
+
+            <div class="guitar-image">
+                🎸
+            </div>
 
             <div class="card-content">
-                <h3>🎸 Lead Guitar</h3>
+
+                <h3>Lead Guitar</h3>
 
                 <p>
-                    Learn scales, melodies, solos, improvisation,
-                    techniques and lead guitar playing.
+                    Learn scales, melodies, solos,
+                    improvisation and lead guitar techniques.
                 </p>
 
-                <div class="price">K60 per lesson</div>
-                <div class="time">⏱️ 1 hour</div>
+                <div class="price">
+                    K60 per lesson
+                </div>
+
+                <div class="time">
+                    ⏱️ 1 hour
+                </div>
+
             </div>
+
         </div>
+
 
         <!-- RHYTHM -->
+
         <div class="card">
-            <img src="rhythm-guitar.jpg"
-                 alt="Person playing rhythm guitar">
+
+            <div class="guitar-image">
+                🎸
+            </div>
 
             <div class="card-content">
-                <h3>🎸 Rhythm Guitar</h3>
+
+                <h3>Rhythm Guitar</h3>
 
                 <p>
-                    Learn chords, strumming patterns, rhythm,
-                    chord progressions and accompaniment.
+                    Learn chords, strumming patterns,
+                    rhythm techniques and accompaniment.
                 </p>
 
-                <div class="price">K60 per lesson</div>
-                <div class="time">⏱️ 1 hour</div>
+                <div class="price">
+                    K60 per lesson
+                </div>
+
+                <div class="time">
+                    ⏱️ 1 hour
+                </div>
+
             </div>
+
         </div>
 
     </section>
 
-    <h2 class="section-title">🎶 Music Styles & Skills</h2>
 
-    <section class="learn-box">
+    <!-- LEARNING -->
 
-        <div class="topic">
-            <h3>🎵 Kalindula</h3>
+    <h2 class="section-title">
+        🎶 What You Will Learn
+    </h2>
+
+    <section class="skills">
+
+        <div class="skill">
+            <h3>🎼 Chords</h3>
             <p>
-                Explore Zambian rhythms, guitar patterns and bass movement.
+                Major, minor, seventh and suspended chords.
             </p>
         </div>
 
-        <div class="topic">
+        <div class="skill">
+            <h3>🎵 Scales</h3>
+            <p>
+                Scales for melodies, solos and improvisation.
+            </p>
+        </div>
+
+        <div class="skill">
+            <h3>🥁 Rhythm</h3>
+            <p>
+                Timing, strumming and rhythmic accuracy.
+            </p>
+        </div>
+
+        <div class="skill">
+            <h3>🇿🇲 Kalindula</h3>
+            <p>
+                Zambian guitar rhythms and musical patterns.
+            </p>
+        </div>
+
+        <div class="skill">
             <h3>🔥 Seben</h3>
             <p>
-                Practice rhythmic guitar phrases, movement and improvisation.
+                Rhythmic guitar phrases and improvisation.
             </p>
         </div>
 
-        <div class="topic">
-            <h3>🎧 R&B</h3>
-            <p>
-                Learn smooth chords, melodies, groove and expressive playing.
-            </p>
-        </div>
-
-        <div class="topic">
+        <div class="skill">
             <h3>🙏 Worship</h3>
             <p>
-                Learn worship chords, transitions, dynamics and accompaniment.
+                Worship chords, transitions and accompaniment.
             </p>
         </div>
 
-        <div class="topic">
-            <h3>🎼 Chords & Scales</h3>
+        <div class="skill">
+            <h3>🎧 R&B</h3>
             <p>
-                Build a strong foundation in guitar theory and practical playing.
+                Smooth chords, melodies and expressive playing.
             </p>
         </div>
 
     </section>
+
+
+    <!-- PROFESSOR -->
+
+    <section class="professor">
+
+        <div class="professor-icon">
+            🎸
+        </div>
+
+        <h2>
+            EMMAH SOLO 🎸 PROFESSOR
+        </h2>
+
+        <p>
+            Guitar instructor helping students develop
+            practical guitar skills, musical understanding
+            and confidence.
+        </p>
+
+    </section>
+
+
+    <!-- BOOKING -->
 
     <section class="booking">
 
-        <h2>📱 Book Your Lesson</h2>
+        <h2>
+            📅 Book Your Guitar Lesson
+        </h2>
 
         <p>
-            Start your guitar journey with EMMAH SOLO 🎸 PROFESSOR.
+            Start your guitar journey with
+            EMMAH SOLO 🎸 PROFESSOR.
         </p>
 
-        <p class="price">K60 • 1 Hour</p>
+        <div class="price">
+            K60 • 1 Hour
+        </div>
 
-        <a class="whatsapp"
-           href="https://wa.me/260975598059">
-            WhatsApp EMMAH SOLO
+        <a
+            class="whatsapp"
+            href="https://wa.me/260975598059"
+            target="_blank"
+        >
+            📱 WhatsApp EMMAH SOLO
         </a>
 
     </section>
 
-</div>
+</main>
+
 
 <footer>
+
     © 2026 EMMAH SOLO 🎸 PROFESSOR<br>
     Guitar Lessons
+
 </footer>
 
+
 <!-- BOTTOM NAVIGATION -->
+
 <nav class="bottom-nav">
 
-    <div class="nav-item active">
+    <div class="nav-item active"
+         onclick="window.scrollTo({top:0, behavior:'smooth'})">
         <span>🏠</span>
         Home
     </div>
 
-    <div class="nav-item">
+    <div class="nav-item"
+         onclick="document.querySelector('.lessons').scrollIntoView({behavior:'smooth'})">
         <span>🎸</span>
         Lessons
     </div>
 
-    <div class="nav-item">
+    <div class="nav-item"
+         onclick="document.querySelector('.skills').scrollIntoView({behavior:'smooth'})">
         <span>🎼</span>
         Learn
     </div>
 
-    <div class="nav-item">
+    <div class="nav-item"
+         onclick="document.querySelector('.booking').scrollIntoView({behavior:'smooth'})">
         <span>📅</span>
         Book
     </div>
 
-    <div class="nav-item">
+    <div class="nav-item"
+         onclick="document.querySelector('.professor').scrollIntoView({behavior:'smooth'})">
         <span>👨‍🏫</span>
         Profile
     </div>
