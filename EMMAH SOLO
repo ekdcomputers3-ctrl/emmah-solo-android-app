@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EMMAH SOLO 🎸 PROFESSOR - Guitar Lessons</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #111;
+    color: #eee;
+    padding-bottom: 75px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 35px 15px 30px;
+    background: linear-gradient(145deg, #111, #272018, #111);
+    border-bottom: 2px solid #c9a227;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #d8b34a;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.tagline {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #cfcfcf;
+    font-style: italic;
+}
+
+/* MAIN */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #d8b34a;
+    margin: 25px 0 18px;
+    font-size: 25px;
+}
+
+/* WELCOME */
+.welcome {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.welcome h2 {
+    color: #d8b34a;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    line-height: 1.7;
+    color: #ddd;
+}
+
+/* LESSON CARDS */
+.lessons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: linear-gradient(145deg, #201d19, #121212);
+    border: 1px solid #6e5720;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card h3 {
+    color: #d8b34a;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.price {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d8b34a;
+}
+
+.time {
+    margin-top: 5px;
+}
+
+/* LEARN SECTION */
+.learn-box {
+    background: #1b1916;
+    border: 1px solid #5d4b20;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.topic {
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 3px solid #d8b34a;
+    background: #111;
+    border-radius: 8px;
+}
+
+.topic h3 {
+    color: #d8b34a;
+    margin-bottom: 5px;
+}
+
+/* BOOKING */
+.booking {
+    text-align: center;
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(145deg, #272018, #111);
+    border: 1px solid #c9a227;
+    border-radius: 18px;
+}
+
+.booking h2 {
+    color: #d8b34a;
+    margin-bottom: 12px;
+}
+
+.whatsapp {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 13px 25px;
+    border-radius: 30px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* BOTTOM NAVIGATION */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 68px;
+    background: #0c0c0c;
+    border-top: 1px solid #6e5720;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-item {
+    text-align: center;
+    color: #aaa;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.nav-item span {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+.nav-item.active {
+    color: #d8b34a;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: #888;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">EMMAH SOLO 🎸 PROFESSOR</div>
+    <div class="subtitle">GUITAR LESSONS</div>
+    <div class="tagline">
+        Learn • Practice • Master
+    </div>
+</header>
+
+<div class="container">
+
+    <section class="welcome">
+        <h2>Welcome to EMMAH SOLO Guitar Lessons</h2>
+        <p>
+            Develop your guitar skills through practical and structured
+            lessons in Bass, Lead and Rhythm Guitar.
+        </p>
+    </section>
+
+    <h2 class="section-title">🎸 Choose Your Guitar</h2>
+
+    <section class="lessons">
+
+        <!-- BASS -->
+        <div class="card">
+            <img src="bass-guitar.jpg"
+                 alt="Person playing bass guitar">
+
+            <div class="card-content">
+                <h3>🎸 Bass Guitar</h3>
+
+                <p>
+                    Learn bass lines, grooves, timing, scales and
+                    practical bass techniques.
+                </p>
+
+                <div class="price">K60 per lesson</div>
+                <div class="time">⏱️ 1 hour</div>
+            </div>
+        </div>
+
+        <!-- LEAD -->
+        <div class="card">
+            <img src="lead-guitar.jpg"
+                 alt="Person playing lead guitar">
+
+            <div class="card-content">
+                <h3>🎸 Lead Guitar</h3>
+
+                <p>
+                    Learn scales, melodies, solos, improvisation,
+                    techniques and lead guitar playing.
+                </p>
+
+                <div class="price">K60 per lesson</div>
+                <div class="time">⏱️ 1 hour</div>
+            </div>
+        </div>
+
+        <!-- RHYTHM -->
+        <div class="card">
+            <img src="rhythm-guitar.jpg"
+                 alt="Person playing rhythm guitar">
+
+            <div class="card-content">
+                <h3>🎸 Rhythm Guitar</h3>
+
+                <p>
+                    Learn chords, strumming patterns, rhythm,
+                    chord progressions and accompaniment.
+                </p>
+
+                <div class="price">K60 per lesson</div>
+                <div class="time">⏱️ 1 hour</div>
+            </div>
+        </div>
+
+    </section>
+
+    <h2 class="section-title">🎶 Music Styles & Skills</h2>
+
+    <section class="learn-box">
+
+        <div class="topic">
+            <h3>🎵 Kalindula</h3>
+            <p>
+                Explore Zambian rhythms, guitar patterns and bass movement.
+            </p>
+        </div>
+
+        <div class="topic">
+            <h3>🔥 Seben</h3>
+            <p>
+                Practice rhythmic guitar phrases, movement and improvisation.
+            </p>
+        </div>
+
+        <div class="topic">
+            <h3>🎧 R&B</h3>
+            <p>
+                Learn smooth chords, melodies, groove and expressive playing.
+            </p>
+        </div>
+
+        <div class="topic">
+            <h3>🙏 Worship</h3>
+            <p>
+                Learn worship chords, transitions, dynamics and accompaniment.
+            </p>
+        </div>
+
+        <div class="topic">
+            <h3>🎼 Chords & Scales</h3>
+            <p>
+                Build a strong foundation in guitar theory and practical playing.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="booking">
+
+        <h2>📱 Book Your Lesson</h2>
+
+        <p>
+            Start your guitar journey with EMMAH SOLO 🎸 PROFESSOR.
+        </p>
+
+        <p class="price">K60 • 1 Hour</p>
+
+        <a class="whatsapp"
+           href="https://wa.me/260975598059">
+            WhatsApp EMMAH SOLO
+        </a>
+
+    </section>
+
+</div>
+
+<footer>
+    © 2026 EMMAH SOLO 🎸 PROFESSOR<br>
+    Guitar Lessons
+</footer>
+
+<!-- BOTTOM NAVIGATION -->
+<nav class="bottom-nav">
+
+    <div class="nav-item active">
+        <span>🏠</span>
+        Home
+    </div>
+
+    <div class="nav-item">
+        <span>🎸</span>
+        Lessons
+    </div>
+
+    <div class="nav-item">
+        <span>🎼</span>
+        Learn
+    </div>
+
+    <div class="nav-item">
+        <span>📅</span>
+        Book
+    </div>
+
+    <div class="nav-item">
+        <span>👨‍🏫</span>
+        Profile
+    </div>
+
+</nav>
+
+</body>
+</html>
